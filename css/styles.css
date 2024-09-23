@@ -302,14 +302,14 @@ height: auto;
 
 .navbar-link::after{
   content:'';
-  position:absolute;
   left:0;
   bottom:0;
   width:0px;
   height:3px;
-  background:#4d5ae5;
+  background:#404bbf;
   opacity:0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .navbar-link:hover:after
