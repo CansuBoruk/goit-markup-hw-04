@@ -107,12 +107,13 @@ background-image: linear-gradient(
   padding: 188px 0;
   display: flex;
 }
+.hthree-title {text-align: left;}
 .p-content {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  text-align: center;
+  text-align: left;
 }
 .footer-content {
   color: var(--cloud);
@@ -148,9 +149,13 @@ background-image: linear-gradient(
 .feature-ul {
   display: flex;
   gap: 24px;
+
 }
 .feature-li {
   width: calc((100% - 72px) / 4);
+
+
+  
 }
 .our-ul {
   display: flex;
@@ -200,7 +205,7 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
   letter-spacing: 0.02em;
   color: var(--navyblue);
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -280,8 +285,8 @@ height: auto;
   opacity: 0;
   visibility: hidden;
   transition: .5s opacity, .5s visibility;
-  width: 360px;
-  height: 300px;
+  width: 352px;
+  height: 295px;
   background-color: #4d5ae5;
   color: #ffffff;
   font-style: var(--roboto);
