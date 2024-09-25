@@ -105,7 +105,9 @@ background-image: linear-gradient(
 	url(
    '../images/people-office1.jpg');
   max-width: 1440px;
-justify-content: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
   padding: 188px 0;
   display: flex;
 }
@@ -173,11 +175,7 @@ justify-content: center;
 }
 
 .our-ul:hover{  
-  box-shadow: 0px 2px 1px 0px #2E2F4214;
 
-box-shadow: 0px 1px 1px 0px #2E2F4229;
-
-box-shadow: 0px 1px 6px 0px #2E2F4214;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transition-property: color;
  
@@ -301,14 +299,22 @@ height: auto;
   font-style: var(--roboto);
  position: absolute;
   transition: transform 250ms ease-in-out;
- padding-top: 30px;
- padding-left:20px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
   
+}
+
+.card-text-part{
+  width: 296px;
+height: 96px;
+margin-top: 40px;
+margin-left: 32px;
+
+
 }
 
 .our-li-1:hover .card-text{
@@ -334,6 +340,14 @@ height: auto;
   opacity: 0px;
   transition-property: color;
   position: absolute;
+  box-shadow: 0px 2px 1px 0px #2E2F4214;
+
+box-shadow: 0px 1px 1px 0px #2E2F4229;
+
+box-shadow: 0px 1px 6px 0px #2E2F4214;
+
+
+
 }
 
 .navbar-link:hover:after
