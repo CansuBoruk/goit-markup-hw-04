@@ -86,6 +86,7 @@
   padding: 120px 0;
   display: flex;
   flex-wrap: wrap;
+  
 }
 body {
   font-family: var(--roboto);
@@ -105,19 +106,19 @@ background-image: linear-gradient(
 	url(
    '../images/people-office1.jpg');
   max-width: 1440px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
   padding: 188px 0;
   display: flex;
 }
-.hthree-title {text-align: center;}
+.hthree-title {text-align: left;}
 .p-content {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  text-align: center;
+  justify-content: left;
 }
 .footer-content {
   color: var(--cloud);
@@ -209,7 +210,7 @@ transition-property: color;
   letter-spacing: 0.02em;
   color: var(--navyblue);
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
 }
 
 
