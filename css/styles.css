@@ -120,6 +120,13 @@ background-image: linear-gradient(
   color: var(--slate);
   justify-content: left;
 }
+.p-content-team{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  justify-content: center;
+}
 .footer-content {
   color: var(--cloud);
   line-height: 1.5;
@@ -211,6 +218,15 @@ transition-property: color;
   color: var(--navyblue);
   margin-bottom: 8px;
   text-align: left;
+}
+.hthree-title-team{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 
