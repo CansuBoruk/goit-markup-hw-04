@@ -12,7 +12,11 @@
   --roboto: "Roboto", sans serif;
   --raleway: "Raleway", sans serif;
 }
-
+*, 
+::before, 
+::after {
+    box-sizing: border-box;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,7 +24,6 @@
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -52,9 +55,44 @@
   padding: 24px 0;
   position: relative;
 }
+.navbar-link::after{
+  content:'';
+  left:0;
+  bottom:0;
+  background:#404bbf;
+  opacity:0;
+  width: 48px;
+  height: 4px;
+  opacity: 0px;
+  transition-property: color;
+position: absolute;
+  box-shadow: 0px 2px 1px 0px #2E2F4214;
+
+box-shadow: 0px 1px 1px 0px #2E2F4229;
+
+box-shadow: 0px 1px 6px 0px #2E2F4214;
+border-radius: 2px;
+
+}
+
+.navbar-link:hover:after
+{
+  opacity:1;
+  width:100%;
+  transition-property: color;
+  border-width: 0;
+}
 .navbar-link:hover {
   color: var(--ocean);
   transition-property:color; 
+}
+.navbar-ul {
+  display: flex;
+  gap: 40px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
 }
 .address {
   font-style: normal;
@@ -77,6 +115,9 @@
   border-color: var(--cornflower);
   padding-top: 24px;
   padding-bottom: 24px;
+
+
+
 }
 
 
@@ -153,10 +194,7 @@ text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.navbar-ul {
-  display: flex;
-  gap: 40px;
-}
+
 .feature-ul {
   display: flex;
   gap: 24px;
@@ -265,16 +303,15 @@ height: auto;
 .header-container {
   display: flex;
   padding-left: 156px;
+ 
+
 }
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.navbar {
-  display: flex;
-  align-items: center;
-}
+
 
 
 .icon-list{
@@ -345,33 +382,7 @@ margin-left: 32px;
 
 }
 
-.navbar-link::after{
-  content:'';
-  left:0;
-  bottom:0;
-  background:#404bbf;
-  opacity:0;
-  width: 48px;
-  height: 4px;
-  opacity: 0px;
-  transition-property: color;
-position: absolute;
-  box-shadow: 0px 2px 1px 0px #2E2F4214;
 
-box-shadow: 0px 1px 1px 0px #2E2F4229;
-
-box-shadow: 0px 1px 6px 0px #2E2F4214;
-
-
-
-}
-
-.navbar-link:hover:after
-{
-  opacity:1;
-  width:100%;
-  transition-property: color;
-}
 
 .feature-svg{
   border: 1px solid #8E8F99;
